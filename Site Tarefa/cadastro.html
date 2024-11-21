@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    
+    <div class="temas">
+        <button id="tema" onclick="trocarTemaCadastro()"><img src="/img/tema-removebg-preview.png" alt=""></button>
+    </div>
+
+    <div class="container">
+    <div id ="id-caixa" class="caixa">
+        <div class="titulo">
+            <h2>Inscreva-se</h2>
+        </div>
+        <form action="">
+        <div class="dados">
+            <input type="text" placeholder="E-mail">
+            <br>
+            <br>
+            <input type="password" placeholder="Senha">
+            <br>
+            <br>
+            <input type="password" placeholder="Confirme a Senha">
+        </div>
+
+        <div class="enviar">
+            <button id="cadastrar" type="submit">Cadastrar</button>
+        </div>
+
+        <p>Já tem uma conta? Faça <a href="login.html">Login</a></p>
+        <br>
+        <div class="cadastros">
+            <button id="google"><img src="img/Google Icon.png" alt="">Login pelo Google</button>
+            <button id="facebook"><img src="img/Facebook Icon.png" alt="">Login pelo Facebook</button>
+        </div>
+    </form>
+
+
+</div>
+    </div>
+
+    <script src="login-cadastro.js"></script>
+</body>
+</html>

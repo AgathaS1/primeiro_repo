@@ -1,0 +1,224 @@
+/* ========== Global ========== */
+.container {
+    display: flex;
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 100;
+}
+
+/* ========== Lateral ========== */
+.lateral {
+    display: flex;
+    background-color: #3d3d3d;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    letter-spacing: 3px;
+}
+
+/* Funções na Lateral */
+.funcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.funcoes img {
+    width: 20px;
+}
+
+.funcoes button{
+    display: flex;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Perfil do Usuário */
+.perfil {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px -10px;
+    gap: 5px;
+}
+
+.perfil img {
+    width: 40px;
+}
+
+/* ========== Área Principal ========== */
+.principal {
+    width: 80%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Topo da Área Principal */
+.principal .numero-tarefas {
+    display: flex;
+    align-items: center;
+}
+
+.numero-tarefas img {
+    width: 15px;
+}
+
+/* Layout da Linha Superior */
+.topo {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Visualizar Botão no Topo */
+.visualizar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.visualizar button {
+    width: 60px;
+    height: 30px;
+}
+
+/* ========== Modal ========== */
+
+/* Modal de Tarefa */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+    width: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: rgb(0, 0, 0);
+}
+
+/* Títulos no Modal */
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+/* Opções dentro do Modal */
+.opcoes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.opcoes button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgb(170, 162, 162);
+}
+
+.opcoes img {
+    width: 20px;
+}
+
+.modal-content input {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 10px 0;
+}
+
+#nome {
+    font-size: 20px;
+}
+
+/* Botões de Data e Prioridade */
+.modal-content #dia-da-tarefa {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.modal-content #definirPrioridade {
+    display: none;
+}
+
+/* Botões de Ação Finais */
+#botoes-finais {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+#botoes-finais button {
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#cancelar-tarefa {
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+
+#salvar-tarefa {
+    background-color: rgb(196, 90, 90);
+    color: white;
+}
+
+/* ========== Tarefas ========== */
+
+/* Lista de Tarefas */
+.tarefas {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botão Adicionar Tarefa */
+.tarefas .botao-adicionar button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin: 0 15px;
+    padding: 5px;
+    gap: 10px;
+}
+
+.botao-adicionar button img {
+    width: 12px;
+}
+
+/* Estilização da Tarefa */
+.tarefa {
+    background-color: blueviolet;
+    margin: 30px;
+}
+
+/* ========== Etiquetas ========== */
+.etiqueta {
+    display: flex;
+    flex-direction: column;
+}

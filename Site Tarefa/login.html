@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <div class="temas">
+        <button id="tema" onclick="trocarTemaLogin()"><img src="/img/tema-removebg-preview.png" alt=""></button>
+    </div>
+      <div class="container">
+      <h2>Seja Bem-vindo(a)!</h2>
+      <div class="caixa">
+        <div class="titulo">
+            <h2>Login</h2>
+        </div>
+        <form action="">
+        <div class="dados">
+            <input type="text" placeholder="E-mail" required>
+            <br>
+            <br>
+            <input type="password" placeholder="Senha" required>
+        </div>
+        <div class="lembrar-de-mim">
+            <input type="checkbox" name="lembrar" id="lembrar">
+            <span>Lembrar de mim</span>
+        </div>
+
+        <div class="enviar">
+            <a href='index.html'><button id="logar" type="button">Login</button></a>
+        </div>
+     </form>
+
+        <a id="recuperar-senha" href="recuperar.html">Recuperar a senha</a>
+        <br>
+        <span>Não tem uma conta? <a id= "cadastrar-conta"href="cadastro.html">Cadastre-se</a></span>
+        <br><br>
+        <div class="cadastros">
+            <button id="google"><img src="img/Google Icon.png" alt="">Login pelo Google</button>
+            <button id="facebook"><img src="img/Facebook Icon.png" alt="">Login pelo Facebook</button>
+        </div>
+    </div>
+    </div>
+
+<script src="login-cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Tarefa</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="lateral">
+            <div class="funcoes">
+                <div class="perfil">
+                    <img src="/img/usuario icon.png" alt="imagem perfil">
+                    <span id="nome-usuario">Usuário</span>
+                </div>
+                <div class="adicionar-tarefa">
+                    <button id="adicionar">
+                        <img src="img/Adicionar Icon.png" alt="imagem">
+                        Adicionar Tarefa
+                    </button>
+                </div>
+                <div class="buscar">
+                    <button id="pesquisa">
+                        <img src="img/Pesquisa Icon.png" alt="imagem">
+                        Buscar
+                    </button>
+                </div>
+                <div class="entrada">
+                    <button id="entrada">
+                        <img src="img/Depositorio Icon.png" alt="imagem">
+                        Entrada
+                    </button>
+                </div>
+                <div class="hoje">
+                    <button id="dia-hoje">
+                        <img src="img/Hoje Icone.png" alt="imagem">
+                        Em Breve
+                    </button>
+                </div>
+                <div class="etiquetas">
+                    <button id="etiquetas">
+                        <img src="img/etiqueta.png" alt="imagem">
+                        Etiquetas
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="principal">
+            <div class="topo">
+                <div class="dia">
+                    <h2>Hoje</h2>
+                    <br><br>
+                    <p id="dia-mes"></p>
+                </div>
+                <div class="visualizar">
+                    <button onclick="visualizar()">Visualizar</button>
+                </div>
+            </div>
+            <div class="tarefas">
+                <div class="botao-adicionar">
+                    <button id="botao-tarefa"> <img src="img/Adicionar Icon.png" alt="">Adicionar Tarefa</button>
+                </div>
+                <div class="dia-tarefa">
+                    <!-- Aqui vai ficar o dia da tarefa selecionado -->
+                </div>
+                <div id="modal-tarefa" class="modal">
+                    <div class="modal-content">
+                        <h2>Nova Tarefa</h2>
+                        <input id="nome" placeholder="Nome da Tarefa" type="text">
+                        <input id="descricao" placeholder="Descrição" type="text">
+                        <div class="opcoes">
+                            <div class="calendario">
+                                <button id="dia-da-tarefa">
+                                    <img src="img/Calendario Icon.png" alt="Imagem">
+                                    <span>Hoje</span>
+                                </button>
+                            </div>
+                            <div class="prioridade">
+                                <button id="prioridade-botao" onclick="mostrarPrioridade()">
+                                    <img src="img/bandeira.png" alt="">Prioridade
+                                </button>
+                            </div>
+                            <div class="etiqueta">
+                                <button id="etiqueta-botao" onclick="mostrarEtiquetas()">
+                                    <img src="/img/etiqueta.png" alt="">Etiqueta
+                                </button>
+                            </div>
+                        </div>
+                        <div id="botoes-finais">
+                            <button id="cancelar-tarefa" onclick="fecharModal()">Cancelar</button>
+                            <button id="salvar-tarefa">Adicionar Tarefa</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="tarefas-acumuladas"></div>
+            </div>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>

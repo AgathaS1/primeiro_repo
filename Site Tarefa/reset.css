@@ -1,0 +1,33 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    font-family: sans-serif; /* Escolha uma fonte padrão se quiser */
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input{
+    outline-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

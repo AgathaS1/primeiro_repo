@@ -1,0 +1,132 @@
+body{
+background-image: url(img/Pixel_Art_Fundo.jpg);  
+background-repeat: no-repeat;
+background-color: blue;
+color: white;
+height: 100vh;
+font-family: "Rethink Sans", sans-serif;
+overflow-y: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.temas img{
+    width: 40px;
+    height: 40px;
+}
+
+.temas button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vh;
+    height: 55vh;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid white;
+    position: relative;
+}
+
+.dados input{
+    width: 300px;
+    padding: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline-style: none;
+    margin-bottom: 10px;
+}
+
+/* Para mudar a cor do Placeholder */
+::-webkit-input-placeholder {
+    color: white;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: white;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: white;  
+ }
+ 
+ :-ms-input-placeholder {  
+    color: white;  
+ }
+
+.enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.enviar button{
+    margin-top: 15px;
+    font-family: "Rethink Sans", sans-serif;
+    color: white;
+    width: 160px;
+    padding: 15px;
+    background: #6F8BFF;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+
+.cadastros{
+    padding-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.cadastros img{
+    width: 24px;
+}
+
+.cadastros button{
+    display: flex;
+    color: white;
+    padding: 12px;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+
+.cadastros button:first-child:active{
+    border: 1px solid #63E896;
+    color: #63E896;
+}
+
+.cadastros button:last-child:active{
+    border: 1px solid #8090ce;
+    color: #8090ce;
+}
+
+#recuperar-senha{
+    color: #8090ce;
+}
+
+#cadastrar-conta{
+    color: #63E896;
+}

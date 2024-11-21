@@ -1,0 +1,348 @@
+/* ========== Global ========== */
+.container {
+    display: flex;
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 100;
+}
+
+/* ========== Lateral ========== */
+.lateral {
+    display: flex;
+    background-color: #411c19;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    letter-spacing: 3px;
+}
+
+/* Funções na Lateral */
+.funcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.funcoes img {
+    width: 20px;
+}
+
+.funcoes button{
+    display: flex;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.funcoes button:hover{
+    background-color: #8a2c34;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+ 
+/* Perfil do Usuário */
+.perfil {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px -10px;
+    gap: 5px;
+}
+
+.perfil img {
+    width: 80px;
+}
+
+/* ========== Área Principal ========== */
+.principal {
+    width: 80%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Topo da Área Principal */
+.principal .numero-tarefas {
+    display: flex;
+    align-items: center;
+}
+
+.numero-tarefas img {
+    width: 15px;
+}
+
+/* Layout da Linha Superior */
+.topo {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+}
+
+
+
+/* ============ Filtros ============== */
+#filtro-container {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border: 2px  #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+/* Estilização dos inputs e selects dentro do contêiner de filtros */
+#filtro-container input,
+#filtro-container select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilização do botão "Aplicar Filtro" */
+#aplicar-filtro {
+    padding: 10px 15px;
+    background-color: #ff7f50; /* Fundo laranja */
+    color: white; /* Texto branco */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#aplicar-filtro:hover {
+    background-color: #ff6347; /* Tom de laranja mais escuro no hover */
+}
+
+/* Estilização do botão "Buscar" */
+#buscar {
+    padding: 10px 15px;
+    background-color: rgb(196, 90, 90);
+    color: white; 
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#buscar:hover {
+    background-color: #ff6347; 
+}
+
+
+
+/* ========== Modal ========== */
+
+/* Modal de Tarefa */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+    width: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: rgb(0, 0, 0);
+}
+
+/* Títulos no Modal */
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+/* Opções dentro do Modal */
+.opcoes {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+    padding: 5px;
+}
+
+#data-tarefa{
+    border: 1px solid rgb(170, 162, 162);
+    padding: 3px;
+}
+
+.low {
+    background-color: #d4edda;
+}
+
+.medium {
+    background-color: #fff3cd;
+}
+
+.high {
+    background-color: #f8d7da;
+}
+
+#nova-etiqueta-container {
+    margin-top: 10px;
+}
+
+.tarefa .etiqueta-tarefa {
+    color: #ff6458;
+}
+
+.opcoes button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgb(170, 162, 162);
+    padding: 3px;
+}
+
+.opcoes img {
+    width: 20px;
+}
+
+.modal-content input {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+}
+
+.modal-content textarea{
+    width: 100%;
+}
+
+#nome {
+    font-size: 20px;
+}
+
+/* Botões de Data e Prioridade */
+.modal-content #dia-da-tarefa {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.modal-content #definirPrioridade {
+    display: none;
+}
+
+/* Botões de Ação Finais */
+#botoes-finais {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+#botoes-finais button {
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#cancelar-tarefa {
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+
+#salvar-tarefa {
+    background-color: rgb(196, 90, 90);
+    color: white;
+}
+
+/* ========== Tarefas ========== */
+
+/* Lista de Tarefas */
+.tarefas {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Botão Adicionar Tarefa */
+.tarefas .botao-adicionar button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin: 0 15px;
+    padding: 5px;
+    gap: 10px;
+    
+}
+
+#botao-tarefa{
+    color: #b84807;
+    font-weight: bold;
+}
+.botao-adicionar button img {
+    width: 20px;
+}
+
+/* Estilização da Tarefa */
+.tarefa {
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px; /* Margem entre as tarefas */
+    width: 20%;
+}
+
+.concluir-tarefa {
+    margin-top: 15px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 3px; /* Bordas arredondadas */
+    padding: 5px 10px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.concluir-tarefa:hover {
+    background-color: #218838; /* Cor de fundo ao passar o mouse */
+}
+
+.concluir-tarefa:focus {
+    outline: none; /* Remove o contorno padrão ao focar no botão */
+}
+
+.titulo-tarefa {
+    margin: 0; /* Remove margem padrão */
+    font-size: 1.2em; /* Tamanho da fonte */
+}
+
+.descricao-tarefa {
+    color: #666; /* Cor da descrição */
+}
+
+.data-tarefa {
+    font-size: 0.9em; /* Tamanho menor para a data */
+    color: #999; /* Cor mais clara */
+}
+
+
+/* ========== Etiquetas ========== */
+.etiqueta {
+    display: flex;
+    flex-direction: column;
+}
